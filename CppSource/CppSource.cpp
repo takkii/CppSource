@@ -45,9 +45,10 @@ int main(void)
     string result = z.str();
 
     int redays = nowlt->tm_yday;
+    int reyear = nowlt->tm_year;
     int oneday = 365 * (redays - 1);
-    int uru = (nowlt->tm_year) / 100;
-    int uru_keisan = (nowlt->tm_year >> 2) - uru + (uru >> 2);
+    int uru = (reyear) / 100;
+    int uru_keisan = (reyear >> 2) - uru + (uru >> 2);
     int keisan = (redays * 979 - 1033) >> 5;
     int nichisu = (oneday + uru_keisan + keisan) / 365;
     int redays_mini = 365 - nichisu + 21;
