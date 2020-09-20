@@ -1,10 +1,11 @@
 ﻿#include "all.h"
 
-int main(void)
+auto main(void) -> int  // NOLINT(bugprone-exception-escape)
 {
 	try
 	{
 		time_t now = time(nullptr);
+		// ReSharper disable once CppDeprecatedEntity
 		const tm* nowlt = localtime(&now);
 
 		stringstream x;
