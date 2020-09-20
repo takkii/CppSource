@@ -53,17 +53,17 @@ int main(void)
     int nichisu = (oneday + uru_keisan + keisan) / 365;
     int redays_mini = 365 - nichisu + 21;
 
-    string tim = "時刻を表示:";
-    string gantan = "来年の1月1日まであと: ";
+    string tim = "時刻を表示";
+    string gantan = "来年の1月1日まであと";
     string aisatu = " 日です";
-    string number = "日めくり数え番号 : ";
+    string number = "日めくり数え番号";
     string version = "1.0.1";
     string comma = " : ";
 
-    string himekuri = number + version;
+    string himekuri = number + comma + version;
 
-    cout << tim << result << endl;
-    cout << gantan << redays_mini << aisatu << endl;
+    cout << tim << comma <<result << endl;
+    cout << gantan << comma << redays_mini << aisatu << endl;
     cout << result_reiwa << comma << result_r << endl;
     cout << himekuri << endl;
 
