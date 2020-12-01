@@ -64,7 +64,7 @@ auto main(void) -> int  // NOLINT(bugprone-exception-escape)
 		stringstream ss;
 		stringstream ssd;
 		// version number
-		ss << 1.0;
+		ss << 1;
 		ssd << 1;
 		string str_num = ss.str();
 		string str_dd = ssd.str();
