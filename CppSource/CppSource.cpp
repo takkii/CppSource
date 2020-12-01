@@ -1,6 +1,6 @@
 #include "all.h"
 
-auto main(void) -> int  // NOLINT(bugprone-exception-escape)
+int main(void)
 {
 	try
 	{
@@ -83,13 +83,15 @@ auto main(void) -> int  // NOLINT(bugprone-exception-escape)
 		long cpp11 = 201103L;
 		long cpp98 = 199711L;
 		
-		if (__cplusplus | cpp17)
+		string cpp_ver = to_string(__cplusplus);
+		
+		if (cpp_ver.compare(to_string(cpp17)) == 0)
 			cout << "現在の C++ : C++17" << endl; 
-		else if (__cplusplus | cpp14)
+		else if (cpp_ver.compare(to_string(cpp14)) == 0)
 			cout << "現在の C++ : C++14" << endl;
-		else if (__cplusplus | cpp11)
+		else if (cpp_ver.compare(to_string(cpp11)) == 0)
 			cout << "現在の C++ : C++11" << endl;
-		else if (__cplusplus | cpp98)
+		else if (cpp_ver.compare(to_string(cpp98)) == 0)
 			cout << "現在の C++ : C++98" << endl;
 		else
 			cout << "現在の C++ : pre-standard C++" << endl;
