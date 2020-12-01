@@ -78,11 +78,16 @@ auto main(void) -> int  // NOLINT(bugprone-exception-escape)
 		cout << result_reiwa << comma << result_r << endl;
 		cout << himekuri << endl;
 		
-		if (__cplusplus == 201703L) cout << "現在の C++ : C++17\n";
-		else if (__cplusplus == 201402L) cout << "現在の C++ : C++14\n";
-		else if (__cplusplus == 201103L) cout << "現在の C++ : C++11\n";
-		else if (__cplusplus == 199711L) cout << "現在の C++ : C++98\n";
-		else cout << "現在の C++ : pre-standard C++\n";
+		if (__cplusplus == 201703L)
+			cout << "現在の C++ : C++17\n";
+		else if (__cplusplus == 201402L)
+			cout << "現在の C++ : C++14\n";
+		else if (__cplusplus == 201103L)
+			cout << "現在の C++ : C++11\n";
+		else if (__cplusplus == 199711L)
+			cout << "現在の C++ : C++98\n";
+		else
+			cout << "現在の C++ : pre-standard C++\n";
 		
 		return 0;
 	}
