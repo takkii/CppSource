@@ -1,4 +1,4 @@
-﻿/*
+/*
  *  Copyright © 2020 Takayuki, Kamiyama
  */
 
@@ -21,7 +21,7 @@
 #include <typeinfo>
 #include <exception>
 #include <initializer_list>
-#include <cstdalign>
+// #include <cstdalign>
 #include <stdexcept>
 #include <cassert>
 #include <cerrno>
@@ -73,5 +73,5 @@
 #include <condition_variable>
 #include <future>
 
-using namespace std::literals;
+// using namespace std::literals;
 using namespace std;
