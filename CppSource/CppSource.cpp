@@ -36,7 +36,7 @@ int main(void)
 		z << nowlt->tm_mon + 1;
 		z << "月";
 		z << nowlt->tm_mday;
-		z << "日：";
+		z << "日 : ";
 		z << nowlt->tm_hour;
 		z << "時";
 		z << nowlt->tm_min;
@@ -59,21 +59,31 @@ int main(void)
 		string gantan = "来年の1月1日まであと";
 		string aisatu = " 日です";
 		string number = "日めくり数え番号";
-
+		string week = "曜日";
+		
+		time_t timer;
+		struct tm *t_st;
+		const char *wday[] = {"日","月","火","水","木","金","土"};
+		
+		time(&timer);
+		t_st = localtime(&timer);
+		
 		stringstream ss;
 		stringstream ssd;
+		
 		// version number
 		ss << 1;
 		ssd << 2;
 		string str_num = ss.str();
 		string str_dd = ssd.str();
 		string comma = " : ";
+		
 		// version number comma
 		string number_comma = ".0.";
 
 		string himekuri = number + comma + str_num + number_comma +  str_dd;
 
-		cout << tim << comma << result << endl;
+		cout << tim << comma << result << comma << wday[t_st->tm_wday] << week << endl;
 		cout << gantan << comma << redays_mini << aisatu << endl;
 		cout << result_reiwa << comma << result_r << endl;
 		cout << himekuri << endl;
