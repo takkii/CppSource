@@ -64,7 +64,7 @@ auto main(void) -> int  // NOLINT(bugprone-exception-escape)
 		stringstream ssd;
 		// version number
 		ss << 1;
-		ssd << 1;
+		ssd << 2;
 		string str_num = ss.str();
 		string str_dd = ssd.str();
 		string comma = " : ";
