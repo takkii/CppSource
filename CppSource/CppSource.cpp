@@ -45,7 +45,8 @@ int main(void)
 		z << "秒";
 
 		string result = z.str();
-
+		
+		// uru calc
 		int redays = nowlt->tm_yday;
 		int reyear = nowlt->tm_year;
 		int oneday = 365 * (redays - 1);
@@ -54,13 +55,15 @@ int main(void)
 		int keisan = (redays * 979 - 1033) >> 5;
 		int nichisu = (oneday + uru_keisan + keisan) / 365;
 		int redays_mini = 365 - nichisu + 27;
-
+		
+		// himekuri string
 		string tim = "時刻を表示";
 		string gantan = "来年の1月1日まであと";
 		string aisatu = " 日です";
 		string number = "日めくり数え番号";
 		string week = "曜日";
 		
+		// week Sun ~ Sat
 		time_t timer;
 		struct tm *t_st;
 		const char *wday[] = {"日","月","火","水","木","金","土"};
@@ -88,11 +91,13 @@ int main(void)
 		cout << result_reiwa << comma << result_r << endl;
 		cout << himekuri << endl;
 		
+		// C++ version info.
 		long cpp17 = 201703L;
 		long cpp14 = 201402L;
 		long cpp11 = 201103L;
 		long cpp98 = 199711L;
 		
+		// long type → string type.
 		string cpp_ver = to_string(__cplusplus);
 		
 		if (cpp_ver.compare(to_string(cpp17)) == 0)
