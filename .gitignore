@@ -1,29 +1,73 @@
-/.vs/CppSource/v16/.suo
-/.vs/CppSource/v16/Browse.VC.db
-/.vs/CppSource/v16/Browse.VC.db-shm
-/.vs/CppSource/v16/Browse.VC.db-wal
-/.vs/CppSource/v16/Browse.VC.opendb
-/.vs/CppSource/v16/ipch/AutoPCH/a8682f31ffb2430e/ALL.ipch
-/.vs/CppSource/v16/ipch/AutoPCH/acdf346ce2fe2094/CPPSOURCE.ipch
-/CppSource/Debug/CppSource.Build.CppClean.log
-/CppSource/Debug/CppSource.exe.recipe
-/CppSource/Debug/CppSource.log
-/CppSource/Debug/CppSource.obj
-/CppSource/Debug/CppSource.tlog/CL.command.1.tlog
-/CppSource/Debug/CppSource.tlog/CL.read.1.tlog
-/CppSource/Debug/CppSource.tlog/CL.write.1.tlog
-/CppSource/Debug/CppSource.tlog/CppSource.lastbuildstate
-/CppSource/Debug/CppSource.tlog/link.command.1.tlog
-/CppSource/Debug/CppSource.tlog/link.read.1.tlog
-/CppSource/Debug/CppSource.vcxproj.FileListAbsolute.txt
-/CppSource/Debug/vc142.idb
-/CppSource/Debug/vc142.pdb
-/Debug/CppSource.exe
-/Debug/CppSource.ilk
-/Debug/CppSource.pdb
-/CppSource/Debug/CppSource.tlog/link.write.1.tlog
-/CppSource.sln.DotSettings.user
-/CppSource/CppSource.vcxproj.filters
-/CppSource/CppSource.vcxproj.user
-/CppSource/CppSource.vcxproj
-/CppSource.sln
+# This file is used to ignore files which are generated
+# ----------------------------------------------------------------------------
+
+*~
+*.autosave
+*.a
+*.core
+*.moc
+*.o
+*.obj
+*.orig
+*.rej
+*.so
+*.so.*
+*_pch.h.cpp
+*_resource.rc
+*.qm
+.#*
+*.*#
+core
+!core/
+tags
+.DS_Store
+.directory
+*.debug
+Makefile*
+*.prl
+*.app
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+Thumbs.db
+*.res
+*.rc
+/.qmake.cache
+/.qmake.stash
+
+# qtcreator generated files
+*.pro.user*
+
+# xemacs temporary files
+*.flc
+
+# Vim temporary files
+.*.swp
+
+# Visual Studio generated files
+*.ib_pdb_index
+*.idb
+*.ilk
+*.pdb
+*.sln
+*.suo
+*.vcproj
+*vcproj.*.*.user
+*.ncb
+*.sdf
+*.opensdf
+*.vcxproj
+*vcxproj.*
+
+# MinGW generated files
+*.Debug
+*.Release
+
+# Python byte code
+*.pyc
+
+# Binaries
+# --------
+*.dll
+*.exe
+
