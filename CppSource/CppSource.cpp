@@ -60,10 +60,19 @@ auto main(void) -> int  // NOLINT(bugprone-exception-escape)
 		string gantan = "来年の1月1日まであと";
 		string aisatu = " 日です";
 		string number = "日めくり数え番号";
-		string version = "1.0.1";
-		string comma = " : ";
 
-		string himekuri = number + comma + version;
+		stringstream ss;
+		stringstream ssd;
+		// version number
+		ss << 1.0;
+		ssd << 1;
+		string str_num = ss.str();
+		string str_dd = ssd.str();
+		string comma = " : ";
+		// version number comma
+		string number_comma = ".0.";
+
+		string himekuri = number + comma + str_num + number_comma +  str_dd;
 
 		cout << tim << comma << result << endl;
 		cout << gantan << comma << redays_mini << aisatu << endl;
