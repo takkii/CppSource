@@ -1,6 +1,6 @@
 #include "all.h"
 
-int main(void)
+int main()
 {
     try
     {
@@ -99,13 +99,13 @@ int main(void)
         // long type → string type.
         string cpp_ver = to_string(__cplusplus);
 
-        if (cpp_ver.compare(to_string(cpp17)) == 0)
+        if (cpp_ver == to_string(cpp17))
             cout << "現在の C++ : C++17" << endl;
-        else if (cpp_ver.compare(to_string(cpp14)) == 0)
+        else if (cpp_ver == to_string(cpp14))
             cout << "現在の C++ : C++14" << endl;
-        else if (cpp_ver.compare(to_string(cpp11)) == 0)
+        else if (cpp_ver == to_string(cpp11))
             cout << "現在の C++ : C++11" << endl;
-        else if (cpp_ver.compare(to_string(cpp98)) == 0)
+        else if (cpp_ver == to_string(cpp98))
             cout << "現在の C++ : C++98" << endl;
         else
             cout << "現在の C++ : pre-standard C++" << endl;
