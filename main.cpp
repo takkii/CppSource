@@ -1,9 +1,7 @@
 #include "all.h"
 
-int main()
-{
-    try
-    {
+int main() {
+    try {
         time_t now = time(nullptr);
         const tm *nowlt = localtime(&now);
 
@@ -112,8 +110,7 @@ int main()
 
         return 0;
     }
-    catch (const exception &e)
-    {
+    catch (const exception &e) {
         cerr << e.what();
     }
 }
