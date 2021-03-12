@@ -2,7 +2,7 @@
  *  Copyright © 2020 Takayuki, Kamiyama
  */
 
- /*
+/*
   * File:   all.h
   * Author: Takayuki, Kamiyama
   *
