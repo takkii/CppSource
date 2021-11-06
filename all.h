@@ -1,13 +1,9 @@
 /*
- *  Copyright © 2020 Takayuki, Kamiyama
- */
-
-/*
   * File:   all.h
   * Author: Takayuki, Kamiyama
   *
   * Created on 2020年7月10日, 12:02
-  */
+*/
 
 #pragma once
 

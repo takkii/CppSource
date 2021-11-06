@@ -89,6 +89,7 @@ int main() {
         cout << himekuri << endl;
 
         // C++ version info.
+        long cpp20 = 202002L;
         long cpp17 = 201703L;
         long cpp14 = 201402L;
         long cpp11 = 201103L;
@@ -97,7 +98,9 @@ int main() {
         // long type → string type.
         string cpp_ver = to_string(__cplusplus);
 
-        if (cpp_ver == to_string(cpp17))
+        if (cpp_ver == to_string(cpp20))
+            cout << "現在の C++ : C++20" << endl;
+        else if (cpp_ver == to_string(cpp17))
             cout << "現在の C++ : C++17" << endl;
         else if (cpp_ver == to_string(cpp14))
             cout << "現在の C++ : C++14" << endl;
